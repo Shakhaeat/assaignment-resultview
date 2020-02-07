@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Required meta tags -->
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+
+    
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	
+	#form{
+		background-color: #84e184;
+		min-height: 700px;
+		padding: 5px 40px 40px 40px;
+	}
+    .registration{
+    	font-size: 55px;
+    	font-family: Agency FB;
+    	font-weight: 700;
+    	border-bottom-style: ridge; 
+    }
+    .text{
+
+    	height: 43px
+    }
+    label{
+
+    	font-size: 18px;
+    }
+    .btn-primary{
+    	border-radius: 30px; padding: 10px;
+    	width: 40%;
+    	position: relative;
+
+    }
+	</style> 
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+   <div class="col-md-12">
+
+    <div  class=" card text-center text-white bg-info mr-8 mt-4 " style="margin-left:90px; margin-right:90px;">
+       <h5 class="card-header" >Web Based Result Publication System</h5>
+    </div>
+    <br>
+   </div>
+
+</div>
+</div>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-7 col-md-offset-3" id="form">
+            <center><b class="registration">Please provide your Info: </b></center>
+ 
+<form method="POST" action="/viewresult">
+	<div class="form-group">
+		<label>Degree :</label>
+        
+        <select required name="degree" class="form-control text">
+          <option value="" disabled selected>Choose One</option>
+        	<option value="ssc">SSC</option>
+        	<option value="hsc">HSC</option>
+        </select>
+
+
+	</div>
+	<div class="form-group">
+		<label>Year :</label>
+		
+		<select required name="year" class="form-control text">
+          <option value="" disabled selected>Choose One</option>  
+        	<option value="2008">2008</option>
+        	<option value="2009">2009</option>
+
+</select>
+</div>
+<div class="form-group">
+		<label>Board :</label>
+        
+        <select required name="board" class="form-control text">
+          <option value="" disabled selected>Choose One</option>
+        	<option value="dhaka">Dhaka</option>
+        	<option value="cumilla">Cumilla</option>
+        </select>
+
+
+	</div>
+	<div class="form-group">
+		<label>Roll :</label>
+		<input type="text" name="roll" class="form-control text" placeholder="Enter Rolls">
+
+	</div>
+	<div class="form-group">
+		<input type="Submit" class="btn btn-primary" value="Get Result">
+     </form>
+	</div>
+</div>
+
+ 
+
+</body>
+</html>
